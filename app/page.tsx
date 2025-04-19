@@ -24,7 +24,7 @@ const Page = () => {
         <p className="text-white text-lg">Simple authentication service</p>
 
         <div>
-          <LoginButton mode="modal" isChild>
+          <LoginButton mode="redirect" isChild>
             <Button variant={"secondary"} size={"lg"}>
               Sign in
             </Button>

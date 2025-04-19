@@ -53,6 +53,7 @@ const SettingsPage = () => {
       password: undefined,
       newPassword: undefined,
       isTwoFactorEnabled: user?.isTwoFactorEnabled || undefined,
+      role: user?.role || undefined,
     },
   });
 
