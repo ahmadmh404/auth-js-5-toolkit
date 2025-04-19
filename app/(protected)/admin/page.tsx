@@ -6,14 +6,15 @@ import { FormSuccess } from "@/components/form-success";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { UserRole } from "@prisma/client";
+import toast from "react-hot-toast";
 
 const AdminPage = () => {
   const onAPIRouteClick = () => {
     fetch("/api/admin").then((res) => {
       if (res.ok) {
-        console.log("OK");
+        toast.success("You're Allowed Sir 😎");
       } else {
-        console.error("FORBIDDEN");
+        toast.error("You're not Allowed normal user 😜");
       }
     });
   };
