@@ -68,8 +68,6 @@ export const login = async (
         data: { userId: existingUser.id },
       });
 
-      console.log("newConfirmation: ", { newConfirmation });
-
       return { success: "Two factor enabled!" };
     } else {
       const verificationToken = await generateVerificationToken(
