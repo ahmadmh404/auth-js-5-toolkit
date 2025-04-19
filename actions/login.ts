@@ -64,7 +64,7 @@ export const login = async (
         });
       }
 
-      const newConfirmation = await db.twoFactorConfirmation.create({
+      await db.twoFactorConfirmation.create({
         data: { userId: existingUser.id },
       });
 
